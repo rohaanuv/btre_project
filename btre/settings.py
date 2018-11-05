@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tr!=2wo6@r+-3bwzb1hmftm=o)%-@3x4_yhdpkoxqyco#*%*1a'
+SECRET_KEY = 'key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
-        'USER':'postgres',
-        'PASSWORD':'ron',
-        'HOST':'localhost'
+        'NAME': 'dbname',
+        'USER':'dbuser',
+        'PASSWORD':'pwd',
+        'HOST':'host'
     }
 }
 
@@ -147,8 +147,8 @@ MESSAGE_TAGS = {
 #email Config
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER='rjptechsolutions9@gmail.com'
-EMAIL_HOST_PASSWORD='rachana1516'
+EMAIL_HOST_USER='mailID'
+EMAIL_HOST_PASSWORD='password'
 EMAIL_USE_TLS=True
 
 
